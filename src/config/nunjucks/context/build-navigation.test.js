@@ -11,13 +11,13 @@ describe('#buildNavigation', () => {
     ).toEqual([
       {
         current: false,
-        text: 'Home',
+        text: 'Services',
         href: '/'
       },
       {
         current: false,
-        text: 'About',
-        href: '/about'
+        text: 'Web register',
+        href: '/web-register'
       }
     ])
   })
@@ -26,13 +26,13 @@ describe('#buildNavigation', () => {
     expect(buildNavigation(mockRequest({ path: '/' }))).toEqual([
       {
         current: true,
-        text: 'Home',
+        text: 'Services',
         href: '/'
       },
       {
         current: false,
-        text: 'About',
-        href: '/about'
+        text: 'Web register',
+        href: '/web-register'
       }
     ])
   })

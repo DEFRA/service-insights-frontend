@@ -62,16 +62,16 @@ describe('context and cache', () => {
           navigation: [
             {
               current: true,
-              text: 'Home',
+              text: 'Services',
               href: '/'
             },
             {
               current: false,
-              text: 'About',
-              href: '/about'
+              text: 'Web register',
+              href: '/web-register'
             }
           ],
-          serviceName: 'service-insights-frontend',
+          serviceName: 'Service Directory',
           serviceUrl: '/'
         })
       })
@@ -151,16 +151,16 @@ describe('context and cache', () => {
           navigation: [
             {
               current: true,
-              text: 'Home',
+              text: 'Services',
               href: '/'
             },
             {
               current: false,
-              text: 'About',
-              href: '/about'
+              text: 'Web register',
+              href: '/web-register'
             }
           ],
-          serviceName: 'service-insights-frontend',
+          serviceName: 'Service Directory',
           serviceUrl: '/'
         })
       })

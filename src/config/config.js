@@ -44,7 +44,13 @@ export const config = convict({
   serviceName: {
     doc: 'Applications Service Name',
     format: String,
-    default: 'service-insights-frontend'
+    default: 'Service Directory'
+  },
+  backendApiUrl: {
+    doc: 'Base URL of the service-insights-data backend API',
+    format: String,
+    default: 'http://localhost:3011',
+    env: 'BACKEND_API_URL'
   },
   root: {
     doc: 'Project root',

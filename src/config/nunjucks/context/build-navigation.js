@@ -1,14 +1,14 @@
 export function buildNavigation(request) {
   return [
     {
-      text: 'Home',
+      text: 'Services',
       href: '/',
-      current: request?.path === '/'
+      current: request?.path === '/' || request?.path?.startsWith('/service')
     },
     {
-      text: 'About',
-      href: '/about',
-      current: request?.path === '/about'
+      text: 'Web register',
+      href: '/web-register',
+      current: request?.path?.startsWith('/web-register')
     }
   ]
 }
