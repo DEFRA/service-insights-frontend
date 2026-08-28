@@ -13,9 +13,11 @@ describe('#contentSecurityPolicy', () => {
   })
 
   test('Should set the CSP policy header', async () => {
+    // Use /health so the assertion doesn't depend on the backend API that the
+    // data pages call — the CSP header is applied to all responses.
     const resp = await server.inject({
       method: 'GET',
-      url: '/'
+      url: '/health'
     })
 
     expect(resp.headers['content-security-policy']).toBeDefined()
